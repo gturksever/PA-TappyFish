@@ -10,6 +10,7 @@ public class Fish : MonoBehaviour
     int angle;
     int maxAngle = 20;
     int minAngle = -30;
+   
 
     void Start()
     {
