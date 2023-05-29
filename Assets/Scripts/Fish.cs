@@ -10,6 +10,7 @@ public class Fish : MonoBehaviour
     int angle;
     int maxAngle = 20;
     int minAngle = -30;
+    public Score score;
    
 
     void Start()
@@ -43,5 +44,13 @@ public class Fish : MonoBehaviour
         }
         transform.rotation = Quaternion.Euler(0, 0, angle);
 
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Obstacle"))
+        {
+            score.Scored();
+        }
     }
 }
