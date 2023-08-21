@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public static bool gameStarted;
     public GameObject getReadyImg;
     public GameObject score;
-    public static int gameScore;
+    public static int gameScore=9999;
     private void Awake()
     {
         bottomLeft = Camera.main.ScreenToWorldPoint(new Vector2(0, 0));

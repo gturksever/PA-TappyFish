@@ -92,22 +92,22 @@ public class Fish : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Obstacle"))
-        {
-            score.Scored();
-            point.Play();
-        }
+    //private void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if (collision.CompareTag("Obstacle"))
+    //    {
+    //        score.Scored();
+    //        point.Play();
+    //    }
 
-        else if (collision.CompareTag("Column") && GameManager.gameOver == false)
-        {
-            gameManager.GameOver();
-            FishDieEffect();
+    //    else if (collision.CompareTag("Column") && GameManager.gameOver == false)
+    //    {
+    //        gameManager.GameOver();
+    //        FishDieEffect();
             
 
-        }
-    }
+    //    }
+    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
